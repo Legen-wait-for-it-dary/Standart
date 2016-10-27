@@ -1,0 +1,40 @@
+.player {
+    margin-bottom: 20px;
+    
+    .pl-img {
+        position: relative;
+        overflow: hidden;
+        height: 400px;
+        img {
+            position: absolute;
+            display: block;
+            width: 100%;
+            
+        }
+    }
+    .pl-number {
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        border: 2px solid #6E7882;
+        top: 10px;
+        left: 10px;
+        font-weight: bold;
+        border-radius: 50%;
+    }
+    .pl-info {
+        border-bottom: 2px solid red;
+        > div {
+            text-align: center;
+        }
+    }
+    .pl-name {
+        font-weight: bold;
+        font-size: 1.8rem;
+    }
+    .pl-name {
+        font-size: 1.4rem;
+    }
+}

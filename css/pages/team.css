@@ -1,0 +1,46 @@
+/* line 1, ../../sass/Pages/team/partials/_player.scss */
+.player {
+  margin-bottom: 20px;
+}
+/* line 5, ../../sass/Pages/team/partials/_player.scss */
+.player .pl-img {
+  position: relative;
+  overflow: hidden;
+  height: 400px;
+}
+/* line 9, ../../sass/Pages/team/partials/_player.scss */
+.player .pl-img img {
+  position: absolute;
+  display: block;
+  width: 100%;
+}
+/* line 17, ../../sass/Pages/team/partials/_player.scss */
+.player .pl-number {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  border: 2px solid #6E7882;
+  top: 10px;
+  left: 10px;
+  font-weight: bold;
+  border-radius: 50%;
+}
+/* line 29, ../../sass/Pages/team/partials/_player.scss */
+.player .pl-info {
+  border-bottom: 2px solid red;
+}
+/* line 31, ../../sass/Pages/team/partials/_player.scss */
+.player .pl-info > div {
+  text-align: center;
+}
+/* line 35, ../../sass/Pages/team/partials/_player.scss */
+.player .pl-name {
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+/* line 39, ../../sass/Pages/team/partials/_player.scss */
+.player .pl-name {
+  font-size: 1.4rem;
+}

@@ -1,0 +1,57 @@
+/* line 1, ../../sass/site/partials/_site-header.scss */
+.site-header {
+  height: 120px;
+  background-color: #961432;
+}
+
+/* line 6, ../../sass/site/site.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 10, ../../sass/site/site.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 12, ../../sass/site/site.scss */
+body {
+  font-size: 1.4rem;
+}
+
+/* line 16, ../../sass/site/site.scss */
+a {
+  color: black;
+}
+
+/* line 20, ../../sass/site/site.scss */
+a:hover, a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+/* line 25, ../../sass/site/site.scss */
+.content {
+  margin-top: 65px;
+  z-index: 0;
+}
+
+/* line 30, ../../sass/site/site.scss */
+.block-title {
+  font-size: 1.8rem;
+  line-height: 1;
+  padding: 7px 0;
+}
+
+/* line 36, ../../sass/site/site.scss */
+hr {
+  padding: 0;
+  margin: 5px 0;
+}
+
+@media only screen and (max-width: 430px) {
+  /* line 42, ../../sass/site/site.scss */
+  .block-title {
+    font-size: 1.5rem;
+  }
+}
