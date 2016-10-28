@@ -21,9 +21,28 @@
         { name: 'Джулиан Грин', birth: '06/06/1995', position: 'forward', number: 37, img: '../img/37.png' }
     ];
 
-    var teamModule = angular.module('teamModule', []);
+    var teamModule = angular.module('teamModule', ['angular.filter']);
 
     teamModule.controller('TeamCtrl', function() {
         this.players = playersArr;
+
+    });
+
+    teamModule.controller('PositionCtrl', function(){
+        this.position = 'all';
+
+        this.setPosition = function(newPosition) {
+            this.position = newPosition;
+        };
+
+        this.equalPosition = function(somePosition) {
+            //if show all of players
+            if(this.position === 'all') {
+                return true;
+            }
+            return somePosition == this.position;
+        };
+
+
     });
 })();

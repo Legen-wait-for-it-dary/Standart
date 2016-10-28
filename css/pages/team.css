@@ -2,19 +2,19 @@
 .player {
   margin-bottom: 20px;
 }
-/* line 5, ../../sass/Pages/team/partials/_player.scss */
+/* line 4, ../../sass/Pages/team/partials/_player.scss */
 .player .pl-img {
   position: relative;
   overflow: hidden;
   height: 400px;
 }
-/* line 9, ../../sass/Pages/team/partials/_player.scss */
+/* line 8, ../../sass/Pages/team/partials/_player.scss */
 .player .pl-img img {
   position: absolute;
   display: block;
   width: 100%;
 }
-/* line 17, ../../sass/Pages/team/partials/_player.scss */
+/* line 15, ../../sass/Pages/team/partials/_player.scss */
 .player .pl-number {
   position: absolute;
   width: 45px;
@@ -27,20 +27,41 @@
   font-weight: bold;
   border-radius: 50%;
 }
-/* line 29, ../../sass/Pages/team/partials/_player.scss */
+/* line 27, ../../sass/Pages/team/partials/_player.scss */
 .player .pl-info {
   border-bottom: 2px solid red;
 }
-/* line 31, ../../sass/Pages/team/partials/_player.scss */
+/* line 29, ../../sass/Pages/team/partials/_player.scss */
 .player .pl-info > div {
   text-align: center;
 }
-/* line 35, ../../sass/Pages/team/partials/_player.scss */
+/* line 33, ../../sass/Pages/team/partials/_player.scss */
 .player .pl-name {
   font-weight: bold;
   font-size: 1.8rem;
 }
-/* line 39, ../../sass/Pages/team/partials/_player.scss */
+/* line 37, ../../sass/Pages/team/partials/_player.scss */
 .player .pl-name {
   font-size: 1.4rem;
+}
+
+/* line 2, ../../sass/Pages/team/partials/_players-menu.scss */
+.players-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* line 6, ../../sass/Pages/team/partials/_players-menu.scss */
+.players-menu ul li {
+  display: inline-block;
+  border: 2px solid #961432;
+  padding: 3px;
+  color: #961432;
+  text-transform: uppercase;
+}
+
+/* line 4, ../../sass/Pages/team.scss */
+h1 {
+  text-indent: 20px;
+  text-transform: uppercase;
 }

@@ -31,27 +31,6 @@ a:hover, a:visited {
 }
 
 /* line 25, ../../sass/site/site.scss */
-.content {
-  margin-top: 65px;
-  z-index: 0;
-}
-
-/* line 30, ../../sass/site/site.scss */
-.block-title {
-  font-size: 1.8rem;
-  line-height: 1;
-  padding: 7px 0;
-}
-
-/* line 36, ../../sass/site/site.scss */
-hr {
-  padding: 0;
-  margin: 5px 0;
-}
-
-@media only screen and (max-width: 430px) {
-  /* line 42, ../../sass/site/site.scss */
-  .block-title {
-    font-size: 1.5rem;
-  }
+.site-content {
+  margin: 10px 0;
 }

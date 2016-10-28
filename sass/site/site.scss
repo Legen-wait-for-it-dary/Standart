@@ -22,25 +22,7 @@ a:hover, a:visited{
     color:black;
 }
 
-.content {
-    margin-top:$siteNavHeight;  
-    z-index:0;
-}
-
-.block-title {
-    font-size: 1.8rem;
-    line-height: 1;
-    padding:7px 0;
-}
-
-hr{
-    padding:0;
-    margin:5px 0;
-}
-
-@media only screen and (max-width: 430px) {
-    .block-title {
-        font-size: 1.5rem;
-    }
+.site-content{
+    margin: 10px 0;
 }
 

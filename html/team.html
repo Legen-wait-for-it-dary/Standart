@@ -1,31 +1,47 @@
 <DOCTYPE html>
-<html ng-app="teamModule">
-<head>
-    <title>Team</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/libs/bootstrap/bootstrap.min.css" />
-    <link rel="stylesheet" href="../css/site/site.css" />
-    <link rel="stylesheet" href="../css/pages/team.css" />
-    <link rel="stylesheet" href="../css/libs/animate/animate.css" />
-    <script src="../js/Libs/angular.min.js"></script>
-    <script src="../js/app.js"></script>
-</head>
-<body ng-controller="TeamCtrl as team">
-    <div class="container-fluid">
-        <div class="row players-group">
-        	<!--div.col-sm-3.player*4>div.pl-img>div.pl-number>{14}+^img.img-responsive[src=../img/player.png alt='player']+^div.player-info>div.pl-name>{Matz Hummels}+^div.pl-birth>{12/12/1980}-->
-        	<div class="col-sm-3 player" ng-repeat="player in team.players | limitTo: 4">
-        		<div class="pl-img">
-        			<div class="pl-number">{{player.number}}</div>
-        			<img ng-src="{{player.img}}" alt="player" class="img-responsive">
-        		</div>
-        		<div class="pl-info">
-        			<div class="pl-name">{{player.name}}</div>
-        			<div class="pl-birth">{{player.birth}}</div>
-        		</div>
-        	</div>
+    <html ng-app="teamModule">
+    <head>
+        <title>Team</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/libs/bootstrap/bootstrap.min.css" />
+        <link rel="stylesheet" href="../css/site/site.css" />
+        <link rel="stylesheet" href="../css/pages/team.css" />
+        <link rel="stylesheet" href="../css/libs/animate/animate.css" />
+        <script src="../js/Libs/angular.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-filter/0.4.7/angular-filter.js"></script>
+        <script src="../js/app.js"></script>
+    </head>
+
+    <body ng-controller="TeamCtrl as team">
+        <div class="container-fluid site-content" ng-controller="PositionCtrl as position">
+            <div class="players-menu">
+                <ul>
+                    <li role="presentation" class="active" ng-click="position.setPosition('all')">all</li>
+                    <li role="presentation" class="active" ng-click="position.setPosition('goalkeeper')">goalkeeper</li>
+                    <li role="presentation" ng-click="position.setPosition('defender')">defender</li>
+                    <li role="presentation" ng-click="position.setPosition('midfield')">midfield</li>
+                    <li role="presentation" ng-click="position.setPosition('forward')">forward</li>
+                </ul>
+            </div>
+            <div class="row players-group" ng-repeat="(group, players) in team.players | groupBy: 'position'">
+                <!--div.col-sm-3.player*4>div.pl-img>div.pl-number>{14}+^img.img-responsive[src=../img/player.png alt='player']+^div.player-info>div.pl-name>{Matz Hummels}+^div.pl-birth>{12/12/1980}-->
+                <!--div ng-show="{{position.equalPosition(group)}}"-->
+                <div ng-show="position.equalPosition(group)">
+                    <h1>{{group}}s</h1>
+                    <div class="col-sm-3 player" ng-repeat="player in players">
+                        <div class="pl-img">
+                            <div class="pl-number">{{player.number}}</div>
+                            <img ng-src="{{player.img}}" alt="player" class="img-responsive">
+                        </div>
+                        <div class="pl-info">
+                            <div class="pl-name">{{player.name}}</div>
+                            <div class="pl-birth">{{player.birth}}</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-</body>
-</html>
+    </body>
+
+    </html>
