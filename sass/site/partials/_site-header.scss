@@ -1,4 +1,136 @@
 .site-header {
-	height: 120px;
-	background-color: #961432;
+    background-color: #3FCAE3;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    border-bottom: 1px solid #3FCAE3;
+    .site-brand {
+        float: left;
+        display: table;
+        background-color: #FBF9FA;
+        position: relative;
+        span {
+            display: table-cell;
+            vertical-align: middle;
+            text-transform: uppercase;
+            color: black;
+            font-weight: bold;
+            padding: 2rem 0.5rem;
+            float: left;
+        }
+        img{
+            height: remtopx(6rem);
+            float: left;
+        }
+    }
+    .site-brand:after {
+        content: '';
+        line-height: 0;
+        font-size: 0;
+        width: 0;
+        height: 0;
+        border-top: remtopx(6rem) solid #FCFAFB;
+        border-right: 20px solid #3FCAE3;
+        position: absolute;
+        right: -15px;
+    }
+    .site-navbar {
+        float: left;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            display: inline-block;
+            a {
+                display: block;
+                font-size: 1.8rem;
+                padding: 2rem;
+                line-height: 2rem;
+                color: white;
+            }
+            span {
+                margin-left: 5px;
+                vertical-align: middle;
+                font-size: 1rem;
+                color: white;
+            }
+            ul {
+                position: absolute;
+                z-index: 999;
+                display: none;
+                border-bottom: 3px solid #3FCAE3;
+                li {
+                    display: inline;
+                    a {
+                        font-size: 1.6rem;
+                        padding: 1rem;
+                        background-color: #fff;
+                        color: #3FCAE3;
+                    }
+                }
+            }
+        }
+        li:hover ul {
+            display: block;
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .show-menu {
+        float: right;
+        display: none;
+        position: absolute;
+        right: 0;
+        button {
+            background-color: transparent;
+            color: #000;
+            border: 0;
+            padding: 2rem;
+            outline: none;
+            span{
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .site-header {
+        background-color: #fff;
+        .site-brand {
+            width: 100%;
+            float: left;
+            span {
+                color: black;
+            }
+        }
+        .site-brand:after {
+            border: 0;
+        }
+        .site-navbar {
+            width: 100%;
+            float: left;
+            > ul {
+                width: 100%;
+                display: none;
+                > li {
+                    display: inline;
+                    > a{
+                        background-color: #3FCAE3;
+                        padding: 1rem;
+                        border-bottom: 1px solid #fff;
+                    }
+                    ul {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .show-menu {
+            display: block;
+        }
+    }
 }

@@ -49,18 +49,20 @@
 .players-menu ul {
   list-style: none;
   padding: 0;
-  margin: 0;
 }
-/* line 6, ../../sass/Pages/team/partials/_players-menu.scss */
+/* line 5, ../../sass/Pages/team/partials/_players-menu.scss */
 .players-menu ul li {
+  margin: 10px 0 0 10px;
   display: inline-block;
-  border: 2px solid #961432;
+  border: 3px solid #2B5EA7;
   padding: 3px;
-  color: #961432;
+  color: #2B5EA7;
+  font-weight: 600;
+  cursor: pointer;
   text-transform: uppercase;
 }
 
-/* line 4, ../../sass/Pages/team.scss */
+/* line 5, ../../sass/Pages/team.scss */
 h1 {
   text-indent: 20px;
   text-transform: uppercase;
