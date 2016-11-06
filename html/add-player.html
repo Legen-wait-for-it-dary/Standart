@@ -1,5 +1,6 @@
 <DOCTYPE html>
     <html ng-app="teamModule">
+
     <head>
         <title>Team</title>
         <meta charset="utf-8" />
@@ -23,13 +24,13 @@
                     </div>
                     <nav class="site-navbar">
                         <ul>
-                            <li><a href="news.html">Новини</a></li>
+                            <li><a href="#">Новини</a></li>
                             <li><a href="#">Команди<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a>
                                 <ul>
-                                    <li><a href="team.html">Основна команда</a></li>
-                                    <li><a href="team.html">Команда U-16</a></li>
-                                    <li><a href="team.html">Команда U-15</a></li>
-                                    <li><a href="team.html">Команда U-14</a></li>
+                                    <li><a href="">Основна команда</a></li>
+                                    <li><a href="">Команда U-16</a></li>
+                                    <li><a href="">Команда U-15</a></li>
+                                    <li><a href="">Команда U-14</a></li>
                                 </ul>
                             </li>
                             <li><a href="#">Галерея<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span></a></a>
@@ -49,39 +50,25 @@
             </div>
             <div class="row">
                 <section class="site-content">
-                    <div class="players-menu">
-                        <ul>
-                            <li role="presentation" class="active" ng-click="position.setPosition('all')">all</li>
-                            <li role="presentation" class="active" ng-click="position.setPosition('goalkeeper')">goalkeeper</li>
-                            <li role="presentation" ng-click="position.setPosition('defender')">defender</li>
-                            <li role="presentation" ng-click="position.setPosition('midfield')">midfield</li>
-                            <li role="presentation" ng-click="position.setPosition('forward')">forward</li>
+                    <aside class="col-xs-3">
+                        <ul class="nav nav-pills nav-stacked">
+                            <li><a href="" class="active">Add new player</a></li>
+                            <li><a href="">Add new player</a></li>
+                            <li><a href="">Add new player</a></li>
                         </ul>
-                    </div>
-                    <div class="row players-group" ng-repeat="(group, players) in team.players | groupBy: 'position'">
-                        <!--div.col-sm-3.player*4>div.pl-img>div.pl-number>{14}+^img.img-responsive[src=../img/player.png alt='player']+^div.player-info>div.pl-name>{Matz Hummels}+^div.pl-birth>{12/12/1980}-->
-                        <!--div ng-show="{{position.equalPosition(group)}}"-->
-                        <div ng-show="position.equalPosition(group)">
-                            <h1>{{group}}s</h1>
-                            <div class="col-sm-3 player" ng-repeat="player in players">
-                                <div class="pl-img">
-                                    <div class="pl-number">{{player.number}}</div>
-                                    <img ng-src="{{player.img}}" alt="player" class="img-responsive">
-                                </div>
-                                <div class="pl-info">
-                                    <div class="pl-name">{{player.name}}</div>
-                                    <div class="pl-birth">{{player.birth}}</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    </aside>
+                    <section class="col-xs-9">
+                        <table class="table">
+                            tr>td
+                        </table>
+                    </section>
                 </section>
             </div>
         </div>
         <script>
         (function() {
             $('.show-menu > button').on('click', function(event) {
-                if ($('.site-navbar > ul').css('display') == 'block') {
+                if ($('.site-navbar > ul').css('display') == 'block'){
                     $('.site-navbar > ul').hide();
                 } else {
                     $('.site-navbar > ul').show();
@@ -91,5 +78,4 @@
         })();
         </script>
     </body>
-
     </html>

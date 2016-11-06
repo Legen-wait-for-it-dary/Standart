@@ -67,3 +67,8 @@ h1 {
   text-indent: 20px;
   text-transform: uppercase;
 }
+
+/* line 10, ../../sass/Pages/team.scss */
+.site-content {
+  background-color: #fafafa;
+}

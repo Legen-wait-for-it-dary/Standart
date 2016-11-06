@@ -1,0 +1,14 @@
+.load-more-news{
+	width: 100%;
+	button{
+		display: block;
+		margin: 20px auto;
+		background-color: $siteMainColor;
+		width: 50%;
+		color: white;
+		padding: 5px;
+		border-radius: 5px;
+		border: 0;
+		outline: none;
+	}
+}

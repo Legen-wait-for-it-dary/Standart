@@ -1,0 +1,42 @@
+/* line 1, ../../sass/Pages/news/partials/_article.scss */
+.article {
+  margin-bottom: 10px;
+}
+/* line 3, ../../sass/Pages/news/partials/_article.scss */
+.article img {
+  width: 100%;
+  max-height: 200px;
+}
+/* line 7, ../../sass/Pages/news/partials/_article.scss */
+.article h4 {
+  color: #148094;
+}
+/* line 10, ../../sass/Pages/news/partials/_article.scss */
+.article .date {
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  color: gray;
+}
+
+@media only screen and (max-width: 992px) {
+  /* line 18, ../../sass/Pages/news/partials/_article.scss */
+  .article img {
+    width: 100%;
+    max-height: 400px;
+  }
+}
+/* line 1, ../../sass/Pages/news/partials/_load-more-news.scss */
+.load-more-news {
+  width: 100%;
+}
+/* line 3, ../../sass/Pages/news/partials/_load-more-news.scss */
+.load-more-news button {
+  display: block;
+  margin: 20px auto;
+  background-color: #2B5EA7;
+  width: 50%;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  border: 0;
+  outline: none;
+}
