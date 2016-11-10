@@ -1,9 +1,9 @@
 .site-header {
-    background-color: #3FCAE3;
+    background-color: #57BA2A;
     position: fixed;
     width: 100%;
     z-index: 999;
-    border-bottom: 1px solid #3FCAE3;
+    border-bottom: 1px solid #000;
     .site-brand {
         float: left;
         display: table;
@@ -29,8 +29,8 @@
         font-size: 0;
         width: 0;
         height: 0;
-        border-top: remtopx(6rem) solid #FCFAFB;
-        border-right: 20px solid #3FCAE3;
+        border-top: remtopx(6rem) solid #000;
+        border-right: 20px solid #57BA2A;
         position: absolute;
         right: -15px;
     }
@@ -86,7 +86,7 @@
         right: 0;
         button {
             background-color: transparent;
-            color: #000;
+            color: #fff;
             border: 0;
             padding: 2rem;
             outline: none;
@@ -99,9 +99,10 @@
 
 @media only screen and (max-width: 650px) {
     .site-header {
-        background-color: #fff;
+        background-color: #000;
         .site-brand {
             width: 100%;
+            background-color: #000;
             float: left;
             span {
                 color: black;

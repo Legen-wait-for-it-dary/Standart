@@ -1,0 +1,80 @@
+/* line 1, ../../sass/Pages/admin/partials/_admin-menu.scss */
+.admin-menu {
+  background-color: #53C6A6;
+  width: 100%;
+}
+/* line 6, ../../sass/Pages/admin/partials/_admin-menu.scss */
+.admin-menu ul li a {
+  border-radius: 0;
+  background-color: #72C6AF;
+  color: #fff;
+}
+/* line 10, ../../sass/Pages/admin/partials/_admin-menu.scss */
+.admin-menu ul li a i {
+  margin-right: 5px;
+}
+/* line 14, ../../sass/Pages/admin/partials/_admin-menu.scss */
+.admin-menu ul li a:hover {
+  background-color: #2C6A59;
+}
+/* line 17, ../../sass/Pages/admin/partials/_admin-menu.scss */
+.admin-menu ul li ul {
+  display: none;
+}
+
+/* line 3, ../../sass/Pages/admin/partials/_players.scss */
+.players .add-player {
+  width: 100%;
+  float: left;
+}
+/* line 6, ../../sass/Pages/admin/partials/_players.scss */
+.players .add-player button {
+  padding: 5px 25px;
+  border-radius: 3px;
+  color: #fff;
+  margin: 5px 0;
+  border: 0;
+  background-color: #820F25;
+  outline: none;
+}
+/* line 16, ../../sass/Pages/admin/partials/_players.scss */
+.players a {
+  color: #0A5C45;
+}
+/* line 18, ../../sass/Pages/admin/partials/_players.scss */
+.players a button {
+  padding: 5px 25px;
+  border-radius: 3px;
+  color: #fff;
+  float: right;
+  margin-right: 5px;
+  border: 0;
+  background-color: #820F25;
+  outline: none;
+}
+/* line 29, ../../sass/Pages/admin/partials/_players.scss */
+.players .list-group {
+  float: left;
+  width: 100%;
+}
+
+/* line 1, ../../sass/Pages/admin/partials/_player.scss */
+.player {
+  display: none;
+}
+/* line 3, ../../sass/Pages/admin/partials/_player.scss */
+.player .player-photo,
+.player .player-info {
+  float: left;
+  padding: 5px;
+}
+
+/* line 6, ../../sass/Pages/admin.scss */
+.admin-content {
+  padding: 5px;
+}
+
+/* line 10, ../../sass/Pages/admin.scss */
+.manage-item {
+  padding: 5px;
+}
